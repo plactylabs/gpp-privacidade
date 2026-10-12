@@ -5,276 +5,565 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="Política de Privacidade do aplicativo GPP — Gestão para Professores de Música, desenvolvido pela Placty Labs.">
-  <title>Política de Privacidade | GPP — Placty Labs</title>
+  <meta name="description" content="Política de Privacidade do GPP — Gestão para Professores de Música, desenvolvido pela Placty Labs.">
+  <meta name="theme-color" content="#075c40">
+  <title>Política de Privacidade | GPP</title>
 
   <style>
     :root {
-      --verde: #006039;
-      --verde-claro: #eaf4ee;
-      --fundo: #f5f7f5;
-      --texto: #25332b;
-      --cinza: #657168;
-      --borda: #e0e7e1;
+      --green: #075c40;
+      --green-dark: #06452f;
+      --green-light: #eaf4ee;
+      --page: #f6f8f6;
+      --surface: #ffffff;
+      --text: #26352d;
+      --muted: #69766e;
+      --border: #e3e9e4;
+      --max-width: 820px;
     }
 
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--fundo);
-      color: var(--texto);
-      line-height: 1.7;
-    }
-
-    header {
-      background: var(--verde);
-      color: white;
-      padding: 38px 20px;
-      text-align: center;
-    }
-
-    .marca {
-      font-size: 14px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      opacity: 0.9;
-    }
-
-    header h1 {
-      margin: 18px 0 8px;
-      font-size: clamp(26px, 5vw, 38px);
-      line-height: 1.2;
-    }
-
-    header p {
-      margin: 0;
-      opacity: 0.9;
-    }
-
-    main {
-      width: min(900px, calc(100% - 32px));
-      margin: 32px auto;
-      padding: clamp(22px, 5vw, 48px);
-      background: white;
-      border: 1px solid var(--borda);
-      border-radius: 16px;
-      box-shadow: 0 8px 30px rgba(0, 50, 25, 0.04);
-    }
-
-    .aviso {
-      padding: 18px;
-      background: var(--verde-claro);
-      border-left: 4px solid var(--verde);
-      border-radius: 8px;
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      color: var(--verde);
-      font-size: 21px;
-      margin-top: 34px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      margin: 10px 0;
-    }
-
-    ul {
-      padding-left: 24px;
-    }
-
-    li {
-      margin-bottom: 8px;
+      background: var(--page);
+      color: var(--text);
+      font-family: Inter, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
     }
 
     a {
-      color: var(--verde);
+      color: var(--green);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
       overflow-wrap: anywhere;
     }
 
-    .contato {
-      padding: 20px;
-      background: #f7f9f7;
-      border: 1px solid var(--borda);
+    a:hover {
+      color: var(--green-dark);
+    }
+
+    .topbar {
+      height: 66px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topbar-inner {
+      width: min(var(--max-width), calc(100% - 40px));
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      background: var(--green);
+      color: white;
+      border-radius: 11px;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .brand-name {
+      font-size: 15px;
+      font-weight: 750;
+      letter-spacing: -0.3px;
+    }
+
+    .brand-name span {
+      color: var(--green);
+    }
+
+    .top-label {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .hero {
+      background: var(--green);
+      color: white;
+      padding: 53px 20px 57px;
+    }
+
+    .hero-inner {
+      width: min(var(--max-width), 100%);
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      color: #d3e9dc;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 22px;
+      height: 2px;
+      background: #a9d3ba;
+      border-radius: 2px;
+    }
+
+    .hero h1 {
+      max-width: 650px;
+      margin: 0;
+      font-size: clamp(30px, 5vw, 43px);
+      line-height: 1.2;
+      font-weight: 750;
+      letter-spacing: -1.5px;
+    }
+
+    .hero p {
+      margin: 14px 0 0;
+      color: #e0eee5;
+      font-size: 16px;
+    }
+
+    .page {
+      width: min(var(--max-width), calc(100% - 40px));
+      margin: 34px auto 54px;
+    }
+
+    .document {
+      padding: clamp(25px, 5vw, 48px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(27, 57, 39, 0.035);
+    }
+
+    .updated {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      padding: 16px 18px;
+      margin-bottom: 38px;
+      background: #f1f6f2;
+      border: 1px solid #e2ece4;
       border-radius: 10px;
     }
 
-    footer {
-      text-align: center;
-      padding: 24px 16px 34px;
-      color: var(--cinza);
-      font-size: 13px;
+    .updated-icon {
+      flex: 0 0 32px;
+      width: 32px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      background: #dcece1;
+      color: var(--green);
+      border-radius: 9px;
+      font-weight: 800;
     }
 
-    footer strong {
-      color: var(--verde);
+    .updated p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .updated strong {
+      color: var(--green-dark);
+    }
+
+    .section {
+      padding: 0 0 26px;
+      margin: 0 0 27px;
+      border-bottom: 1px solid #edf0ed;
+      scroll-margin-top: 20px;
+    }
+
+    .section:last-of-type {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+
+    .section h2 {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin: 0 0 13px;
+      color: var(--green-dark);
+      font-size: 19px;
+      font-weight: 750;
+      line-height: 1.45;
+      letter-spacing: -0.35px;
+    }
+
+    .section-number {
+      flex: 0 0 29px;
+      width: 29px;
+      height: 29px;
+      display: grid;
+      place-items: center;
+      background: var(--green-light);
+      color: var(--green);
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .section p {
+      margin: 9px 0;
+      font-size: 15px;
+    }
+
+    .section ul {
+      padding-left: 22px;
+      margin: 12px 0;
+    }
+
+    .section li {
+      padding-left: 3px;
+      margin: 6px 0;
+      font-size: 15px;
+    }
+
+    .responsible {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      align-items: center;
+      margin-top: 7px;
+      padding: 7px 12px;
+      background: #f7f9f7;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .contact-card {
+      padding: 21px;
+      background: #f3f7f3;
+      border: 1px solid #e0e9e1;
+      border-radius: 12px;
+    }
+
+    .contact-card p {
+      margin: 5px 0;
+    }
+
+    .contact-title {
+      color: var(--green-dark);
+      font-size: 17px;
+      font-weight: 750;
+    }
+
+    .contact-email {
+      font-weight: 650;
+    }
+
+    .footer {
+      padding: 28px 20px 36px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .footer strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--green);
+      font-size: 14px;
+      letter-spacing: 0.3px;
+    }
+
+    .footer p {
+      margin: 4px 0;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 15px;
+      }
+
+      .topbar {
+        height: 60px;
+      }
+
+      .topbar-inner,
+      .page {
+        width: calc(100% - 28px);
+      }
+
+      .top-label {
+        font-size: 11px;
+      }
+
+      .hero {
+        padding: 39px 20px 42px;
+      }
+
+      .hero h1 {
+        letter-spacing: -0.8px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .page {
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      .document {
+        padding: 23px 19px;
+        border-radius: 13px;
+      }
+
+      .updated {
+        margin-bottom: 30px;
+        padding: 13px;
+      }
+
+      .section {
+        margin-bottom: 23px;
+        padding-bottom: 22px;
+      }
+
+      .section h2 {
+        font-size: 17px;
+        gap: 9px;
+      }
+
+      .section p,
+      .section li {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <div class="marca">Placty Labs</div>
-    <h1>Política de Privacidade</h1>
-    <p>GPP — Gestão para Professores de Música</p>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#inicio" aria-label="Placty Labs - início">
+        <span class="brand-mark">P</span>
+        <span class="brand-name">Placty <span>Labs</span></span>
+      </a>
+      <span class="top-label">Documento oficial</span>
+    </div>
+  </div>
+
+  <header class="hero" id="inicio">
+    <div class="hero-inner">
+      <div class="eyebrow">Privacidade e transparência</div>
+      <h1>Política de Privacidade</h1>
+      <p>GPP — Gestão para Professores de Música</p>
+    </div>
   </header>
 
-  <main>
-    <div class="aviso">
-      <strong>Última atualização:</strong> 11 de outubro de 2026.
-      <br>
-      Esta política explica como as informações são tratadas durante
-      o uso do aplicativo GPP.
-    </div>
+  <main class="page">
+    <article class="document">
+      <div class="updated">
+        <div class="updated-icon" aria-hidden="true">i</div>
+        <p>
+          <strong>Última atualização: 11 de outubro de 2026.</strong><br>
+          Entenda como as informações são tratadas durante o uso do GPP.
+        </p>
+      </div>
 
-    <h2>1. Sobre o aplicativo</h2>
-    <p>
-      O GPP — Gestão para Professores de Música é um aplicativo
-      desenvolvido para auxiliar professores na organização de alunos,
-      aulas, agenda e pagamentos.
-    </p>
+      <section class="section">
+        <h2><span class="section-number">1</span> Sobre o aplicativo</h2>
+        <p>
+          O GPP — Gestão para Professores de Música é um aplicativo
+          desenvolvido para auxiliar professores na organização de alunos,
+          aulas, agenda e pagamentos.
+        </p>
+        <div class="responsible">
+          <strong>Responsável pelo aplicativo:</strong> Placty Labs
+        </div>
+      </section>
 
-    <p>
-      <strong>Responsável:</strong> Placty Labs
-    </p>
+      <section class="section">
+        <h2><span class="section-number">2</span> Informações inseridas no aplicativo</h2>
+        <p>O usuário pode inserir informações necessárias para organizar suas atividades, incluindo:</p>
+        <ul>
+          <li>Dados cadastrais de alunos;</li>
+          <li>Agendamentos e registros de aulas;</li>
+          <li>Informações sobre pagamentos e histórico financeiro;</li>
+          <li>Dados de perfil e configurações;</li>
+          <li>Outras informações inseridas voluntariamente pelo usuário.</li>
+        </ul>
+        <p>
+          O usuário é responsável por possuir autorização adequada para
+          registrar informações pessoais de terceiros.
+        </p>
+      </section>
 
-    <h2>2. Informações inseridas no aplicativo</h2>
-    <p>O usuário pode inserir informações necessárias para organizar suas atividades, incluindo:</p>
-    <ul>
-      <li>Dados cadastrais de alunos;</li>
-      <li>Agendamentos e registros de aulas;</li>
-      <li>Informações sobre pagamentos e histórico financeiro;</li>
-      <li>Dados de perfil e configurações;</li>
-      <li>Outras informações inseridas voluntariamente pelo usuário.</li>
-    </ul>
+      <section class="section">
+        <h2><span class="section-number">3</span> Armazenamento dos dados</h2>
+        <p>
+          Os dados operacionais inseridos no GPP são armazenados localmente
+          no dispositivo, conforme a implementação atual do aplicativo.
+          O aplicativo não utiliza um servidor próprio para sincronizar
+          esses dados operacionais entre dispositivos.
+        </p>
+        <p>
+          O usuário deve proteger o dispositivo e as informações armazenadas nele.
+        </p>
+      </section>
 
-    <p>
-      O usuário é responsável por possuir autorização adequada para
-      registrar informações pessoais de terceiros.
-    </p>
+      <section class="section">
+        <h2><span class="section-number">4</span> Backup e restauração</h2>
+        <p>
+          O GPP disponibiliza recursos de backup manual para exportação
+          e restauração de dados.
+        </p>
+        <p>
+          Os arquivos exportados podem conter informações pessoais e financeiras.
+          Recomendamos guardá-los em locais seguros e compartilhá-los somente
+          quando necessário.
+        </p>
+        <p>
+          Os arquivos exportados ficam sujeitos às condições de segurança
+          do local em que forem armazenados.
+        </p>
+      </section>
 
-    <h2>3. Armazenamento dos dados</h2>
-    <p>
-      Os dados operacionais inseridos no GPP são armazenados localmente
-      no dispositivo, conforme a implementação atual do aplicativo.
-      O aplicativo não utiliza um servidor próprio para sincronizar
-      esses dados operacionais entre dispositivos.
-    </p>
-    <p>
-      O usuário deve proteger o dispositivo e as informações armazenadas nele.
-    </p>
+      <section class="section">
+        <h2><span class="section-number">5</span> Firebase Analytics</h2>
+        <p>
+          O aplicativo utiliza o Firebase Analytics, serviço fornecido pelo
+          Google, para compreender como o GPP é utilizado e identificar
+          oportunidades de melhoria.
+        </p>
+        <p>
+          Dependendo da configuração do serviço, podem ser coletados eventos
+          de utilização, informações técnicas do dispositivo e dados de interação.
+        </p>
+        <p>
+          Os eventos personalizados do GPP são destinados a registrar informações
+          gerais de uso, como a abertura do aplicativo e o acesso a funcionalidades.
+          Eles não devem incluir nomes de alunos, telefones, observações pessoais
+          ou valores individuais de pagamentos.
+        </p>
+        <p>
+          O tratamento realizado pelo Google está sujeito às políticas e
+          configurações aplicáveis ao serviço.
+        </p>
+        <p>
+          Consulte a
+          <a href="https://policies.google.com/privacy"
+             target="_blank" rel="noopener noreferrer">Política de Privacidade do Google</a>.
+        </p>
+      </section>
 
-    <h2>4. Backup e restauração</h2>
-    <p>
-      O GPP disponibiliza recursos de backup manual para exportação
-      e restauração de dados.
-    </p>
-    <p>
-      Os arquivos exportados podem conter informações pessoais e financeiras.
-      Recomendamos guardá-los em locais seguros e compartilhá-los somente
-      quando necessário.
-    </p>
-    <p>
-      Os arquivos exportados ficam sujeitos às condições de segurança
-      do local em que forem armazenados.
-    </p>
+      <section class="section">
+        <h2><span class="section-number">6</span> Compartilhamento de informações</h2>
+        <p>
+          A Placty Labs não utiliza um servidor próprio para receber e compartilhar
+          os dados operacionais de alunos, aulas e pagamentos do GPP.
+        </p>
+        <p>
+          Informações de utilização podem ser processadas pelo Firebase Analytics
+          para fins de análise e melhoria do aplicativo.
+        </p>
+        <p>
+          Os arquivos de backup podem ser compartilhados pelo usuário,
+          conforme suas escolhas.
+        </p>
+      </section>
 
-    <h2>5. Firebase Analytics</h2>
-    <p>
-      O aplicativo utiliza o Firebase Analytics, serviço fornecido pelo
-      Google, para compreender como o GPP é utilizado e identificar
-      oportunidades de melhoria.
-    </p>
-    <p>
-      Dependendo da configuração do serviço, podem ser coletados eventos
-      de utilização, informações técnicas do dispositivo e dados de interação.
-    </p>
-    <p>
-      Os eventos personalizados do GPP são destinados a registrar informações
-      gerais de uso, como a abertura do aplicativo e o acesso a funcionalidades.
-      Eles não devem incluir nomes de alunos, telefones, observações pessoais
-      ou valores individuais de pagamentos.
-    </p>
-    <p>
-      O tratamento realizado pelo Google está sujeito às políticas e
-      configurações aplicáveis ao serviço.
-    </p>
-    <p>
-      Consulte a
-      <a href="https://policies.google.com/privacy" target="_blank"
-         rel="noopener noreferrer">Política de Privacidade do Google</a>.
-    </p>
+      <section class="section">
+        <h2><span class="section-number">7</span> Segurança das informações</h2>
+        <p>
+          São adotadas medidas compatíveis com a arquitetura do aplicativo
+          para reduzir os riscos relacionados ao acesso indevido às informações.
+        </p>
+        <p>
+          Nenhum método de armazenamento ou transmissão garante segurança absoluta.
+          Recomendamos manter o dispositivo protegido e os backups em locais seguros.
+        </p>
+      </section>
 
-    <h2>6. Compartilhamento de informações</h2>
-    <p>
-      A Placty Labs não utiliza um servidor próprio para receber e compartilhar
-      os dados operacionais de alunos, aulas e pagamentos do GPP.
-    </p>
-    <p>
-      Informações de utilização podem ser processadas pelo Firebase Analytics
-      para fins de análise e melhoria do aplicativo.
-    </p>
-    <p>
-      Os arquivos de backup podem ser compartilhados pelo usuário,
-      conforme suas escolhas.
-    </p>
+      <section class="section">
+        <h2><span class="section-number">8</span> Retenção e exclusão dos dados</h2>
+        <p>
+          Os dados operacionais permanecem no dispositivo até serem excluídos
+          pelo usuário ou até que os dados locais do aplicativo sejam removidos,
+          por exemplo, mediante a desinstalação.
+        </p>
+        <p>
+          Arquivos de backup exportados podem continuar existindo fora do
+          aplicativo e precisam ser excluídos separadamente pelo usuário.
+        </p>
+        <p>
+          Os dados processados pelo Firebase Analytics estão sujeitos às
+          regras de retenção e exclusão aplicáveis ao serviço e às configurações adotadas.
+        </p>
+      </section>
 
-    <h2>7. Segurança das informações</h2>
-    <p>
-      São adotadas medidas compatíveis com a arquitetura do aplicativo
-      para reduzir os riscos relacionados ao acesso indevido às informações.
-    </p>
-    <p>
-      Nenhum método de armazenamento ou transmissão garante segurança absoluta.
-      Recomendamos manter o dispositivo protegido e os backups em locais seguros.
-    </p>
+      <section class="section">
+        <h2><span class="section-number">9</span> Crianças e adolescentes</h2>
+        <p>
+          O GPP é uma ferramenta de organização destinada a professores.
+          O usuário deve observar a legislação aplicável ao registrar
+          informações pessoais de alunos, especialmente de crianças e adolescentes.
+        </p>
+      </section>
 
-    <h2>8. Retenção e exclusão dos dados</h2>
-    <p>
-      Os dados operacionais permanecem no dispositivo até serem excluídos
-      pelo usuário ou até que os dados locais do aplicativo sejam removidos,
-      por exemplo, mediante a desinstalação.
-    </p>
-    <p>
-      Arquivos de backup exportados podem continuar existindo fora do
-      aplicativo e precisam ser excluídos separadamente pelo usuário.
-    </p>
-    <p>
-      Os dados processados pelo Firebase Analytics estão sujeitos às
-      regras de retenção e exclusão aplicáveis ao serviço e às configurações adotadas.
-    </p>
+      <section class="section">
+        <h2><span class="section-number">10</span> Alterações nesta política</h2>
+        <p>
+          Esta política poderá ser atualizada para refletir mudanças nas
+          funcionalidades, nos serviços utilizados ou nas obrigações legais.
+          A versão atualizada será disponibilizada nesta página.
+        </p>
+      </section>
 
-    <h2>9. Crianças e adolescentes</h2>
-    <p>
-      O GPP é uma ferramenta de organização destinada a professores.
-      O usuário deve observar a legislação aplicável ao registrar
-      informações pessoais de alunos, especialmente de crianças e adolescentes.
-    </p>
-
-    <h2>10. Alterações nesta política</h2>
-    <p>
-      Esta política poderá ser atualizada para refletir mudanças nas
-      funcionalidades, nos serviços utilizados ou nas obrigações legais.
-      A versão atualizada será disponibilizada nesta página.
-    </p>
-
-    <h2>11. Contato</h2>
-    <div class="contato">
-      <p><strong>Placty Labs</strong></p>
-      <p>
-        Dúvidas ou solicitações relacionadas à privacidade:
-        <a href="mailto:plactylabs@gmail.com">plactylabs@gmail.com</a>
-      </p>
-    </div>
+      <section class="section">
+        <h2><span class="section-number">11</span> Contato</h2>
+        <div class="contact-card">
+          <p class="contact-title">Placty Labs</p>
+          <p>
+            Para dúvidas ou solicitações relacionadas à privacidade,
+            entre em contato pelo e-mail:
+          </p>
+          <p>
+            <a class="contact-email" href="mailto:plactylabs@gmail.com">
+              plactylabs@gmail.com
+            </a>
+          </p>
+        </div>
+      </section>
+    </article>
   </main>
 
-  <footer>
+  <footer class="footer">
     <strong>Placty Labs</strong>
     <p>GPP — Gestão para Professores de Música</p>
     <p>© 2026 Placty Labs</p>
